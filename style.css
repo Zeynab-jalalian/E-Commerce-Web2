@@ -34,5 +34,34 @@ html {
   font-weight: bolder;
   margin-right: auto;
 }
+.header .navbar ul {
+  list-style: none;
+}
+.header .navbar ul li {
+  position: relative;
+  float: left;
+}
+.header .navbar ul li:hover ul {
+  display: block;
+}
+.header .navbar ul li a {
+  font-size: 1.7rem;
+  padding: 2rem;
+  color: #666;
+  display: block;
+}
+.header .navbar ul li a:hover {
+  background: #eee;
+}
+.header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 20rem;
+  background: #fff;
+  display: none;
+}
+.header .navbar ul li ul li {
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */

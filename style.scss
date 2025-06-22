@@ -48,4 +48,42 @@ html{
         font-weight: bolder;
         margin-right: auto;
     }
+
+    .navbar{
+        ul{
+            list-style: none;
+
+            li{
+                position: relative;
+                float: left;
+
+                &:hover ul{
+                 display: block;
+                }
+
+                a{
+                    font-size: 1.7rem;
+                    padding: 2rem;
+                    color: $light-color;
+                    display: block;
+
+                    &:hover{
+                        background: $light-bg;
+                    }
+                }
+
+                ul{
+                    position: absolute;
+                    left: 0;
+                    width: 20rem;
+                    background: $white;
+                    display: none;
+
+                    li{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
