@@ -111,4 +111,14 @@ html {
   display: none;
 }
 
+/* media queries */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 0 2rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
