@@ -86,4 +86,20 @@ html{
             }
         }
     }
+
+    .icons div,
+    .icons a{
+      font-size: 2.5rem;
+      color: $black;
+      cursor: pointer;
+      margin-left: 2rem;
+
+      &:hover{
+        color: $pink;
+      }
+    }
+}
+
+#menu-btn{
+    display: none;
 }
