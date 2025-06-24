@@ -343,6 +343,9 @@ html {
   html {
     font-size: 50%;
   }
+  .home .slide .content h3 {
+    font-size: 4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
