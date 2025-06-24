@@ -230,6 +230,20 @@ html {
             }
         }
     }
+
+    .credit{
+        text-align: center;
+        padding: 1rem;
+        padding-top: 2.5rem;
+        margin-top: 2.5rem;
+        font-size: 2rem;
+        color: $light-color;
+        border-top: $border;
+
+        span{
+            color: $pink;
+        }
+    }
 }
 
 

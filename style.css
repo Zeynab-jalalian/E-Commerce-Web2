@@ -171,6 +171,18 @@ html {
   text-transform: none;
   margin: 0.5rem 0;
 }
+.footer .credit {
+  text-align: center;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  color: #666;
+  border-top: 0.2rem solid #333;
+}
+.footer .credit span {
+  color: #e84393;
+}
 
 /* media queries */
 @media (max-width: 1200px) {
