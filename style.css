@@ -178,6 +178,28 @@ html {
   color: #fff;
   border: 0.2rem solid white;
 }
+.home #next-slide, .home #prev-slide {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 4rem;
+  color: #333;
+  border: 0.2rem solid #333;
+  background: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+.home #next-slide:hover, .home #prev-slide:hover {
+  background: #333;
+  color: #fff;
+}
+.home #prev-slide {
+  right: 9rem;
+}
 
 .footer .box-container {
   display: grid;
