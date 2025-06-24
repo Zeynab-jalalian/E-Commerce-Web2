@@ -11,6 +11,26 @@
   text-decoration: none;
 }
 
+section {
+  padding: 2rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2.8rem;
+  font-size: 1.7rem;
+  color: #333;
+  border: 0.2rem solid #333;
+  background: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.btn:hover {
+  background: #333;
+  color: #fff;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -111,6 +131,47 @@ html {
   display: none;
 }
 
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #333;
+  padding: 1rem 0;
+}
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem 0;
+}
+.footer .box-container .box a:hover {
+  color: #e84393;
+}
+.footer .box-container .box a:hover i {
+  padding-right: 1rem;
+}
+.footer .box-container .box a i {
+  color: #e84393;
+  padding-right: 0.5rem;
+}
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.footer .box-container .box form input[type=email] {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  font-size: 1.6rem;
+  text-transform: none;
+  margin: 0.5rem 0;
+}
+
 /* media queries */
 @media (max-width: 1200px) {
   html {
@@ -118,6 +179,9 @@ html {
   }
   .header {
     padding: 0 2rem;
+  }
+  section {
+    padding: 2rem;
   }
 }
 @media (max-width: 768px) {
