@@ -162,6 +162,19 @@ html {
     display: none;
 }
 
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-3rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
 .home {
     padding: 0;
     position: relative;
@@ -175,6 +188,11 @@ html {
         display: flex;
         justify-content: start;
         align-items: center;
+        display: none;
+
+        &.active {
+            display: flex;
+        }
 
         .content {
             span {
@@ -195,6 +213,8 @@ html {
 
             .btn {
                 animation: fadeIn 0.4s linear 0.6s backwards;
+                color: $white;
+                border: 0.2rem solid white;
             }
 
 
