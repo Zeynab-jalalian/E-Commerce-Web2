@@ -40,7 +40,7 @@ $border: 0.2rem solid $black;
     cursor: pointer;
     border-radius: 0.5rem;
 
-    &:hover{
+    &:hover {
         background: $black;
         color: $white;
     }
@@ -161,18 +161,44 @@ html {
 #menu-btn {
     display: none;
 }
-.home{
+
+.home {
     padding: 0;
     position: relative;
-    .slide{
-     display: flex;
-     min-height: 60vh;
-     padding: 2rem 7%;
-     background-size: cover !important;
-     background-position: center !important;
-     display: flex;
-     
-     align-items: center;
+
+    .slide {
+        display: flex;
+        min-height: 60vh;
+        padding: 2rem 7%;
+        background-size: cover !important;
+        background-position: center !important;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        .content {
+            span {
+                color: $white;
+                display: block;
+                font-size: 2rem;
+                animation: fadeIn 0.4s linear 0.2s backwards;
+            }
+
+            h3 {
+                color: $white;
+                display: block;
+                font-size: 6rem;
+                text-transform: uppercase;
+                padding: 1rem 0;
+                animation: fadeIn 0.4s linear 0.4s backwards;
+            }
+
+            .btn {
+                animation: fadeIn 0.4s linear 0.6s backwards;
+            }
+
+
+        }
     }
 }
 
@@ -244,7 +270,7 @@ html {
         }
     }
 
-    .credit{
+    .credit {
         text-align: center;
         padding: 1rem;
         padding-top: 2.5rem;
@@ -253,7 +279,7 @@ html {
         color: $light-color;
         border-top: $border;
 
-        span{
+        span {
             color: $pink;
         }
     }
