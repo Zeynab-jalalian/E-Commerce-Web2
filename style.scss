@@ -161,7 +161,20 @@ html {
 #menu-btn {
     display: none;
 }
-
+.home{
+    padding: 0;
+    position: relative;
+    .slide{
+     display: flex;
+     min-height: 60vh;
+     padding: 2rem 7%;
+     background-size: cover !important;
+     background-position: center !important;
+     display: flex;
+     
+     align-items: center;
+    }
+}
 
 
 

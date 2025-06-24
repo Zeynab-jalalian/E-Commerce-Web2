@@ -131,6 +131,20 @@ html {
   display: none;
 }
 
+.home {
+  padding: 0;
+  position: relative;
+}
+.home .slide {
+  display: flex;
+  min-height: 60vh;
+  padding: 2rem 7%;
+  background-size: cover !important;
+  background-position: center !important;
+  display: flex;
+  align-items: center;
+}
+
 .footer .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
