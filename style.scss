@@ -12,9 +12,6 @@
     text-decoration: none;
 }
 
-section {
-    padding: 2rem 9%;
-}
 
 $pink: #e84393;
 $black: #333;
@@ -27,6 +24,18 @@ $border: 0.2rem solid $black;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
     gap: 1.5rem;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.title {
+ font-size: 3rem;
+ color: $black;
+ margin-bottom: 2rem;
+ text-align: center;
+
 }
 
 .btn {
@@ -66,10 +75,10 @@ html {
         padding-top: 0.7rem;
         font-size: 1.7rem;
 
-        a{
+        a {
             color: $white;
 
-            &:hover{
+            &:hover {
                 color: $black;
             }
         }
