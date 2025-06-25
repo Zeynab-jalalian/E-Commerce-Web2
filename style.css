@@ -36,6 +36,27 @@ html {
   overflow-x: hidden;
 }
 
+.heading {
+  text-align: center;
+  background: #e84393;
+}
+.heading h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.heading p {
+  color: #fff;
+  padding-top: 0.7rem;
+  font-size: 1.7rem;
+}
+.heading p a {
+  color: #fff;
+}
+.heading p a:hover {
+  color: #333;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -178,7 +199,8 @@ html {
   color: #fff;
   border: 0.2rem solid white;
 }
-.home #next-slide, .home #prev-slide {
+.home #next-slide,
+.home #prev-slide {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
@@ -193,7 +215,8 @@ html {
   cursor: pointer;
   text-align: center;
 }
-.home #next-slide:hover, .home #prev-slide:hover {
+.home #next-slide:hover,
+.home #prev-slide:hover {
   background: #333;
   color: #fff;
 }
