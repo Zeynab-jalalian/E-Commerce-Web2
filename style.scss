@@ -342,18 +342,18 @@ html {
         text-align: center;
         border: $border;
 
-        &:hover .image .icons{
+        &:hover .image .icons {
             transform: translateY(0);
         }
 
-        .image{
+        .image {
             border-radius: 0.5rem;
             overflow: hidden;
             position: relative;
             height: 25rem;
             width: 100%;
 
-            .icons{
+            .icons {
                 background: $white;
                 z-index: 1000;
                 position: absolute;
@@ -363,20 +363,21 @@ html {
                 border-bottom: $border;
                 transform: translateY(-7rem);
 
-                a{
+                a {
                     height: 5rem;
                     width: 5rem;
                     line-height: 5rem;
                     font-size: 2rem;
                     color: $black;
-                    &:hover{
+
+                    &:hover {
                         background: $black;
                         color: $white;
                     }
                 }
             }
-      
-            img{
+
+            img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover
@@ -384,26 +385,28 @@ html {
 
         }
 
-        .content{
+        .content {
             padding: 1.5rem 0;
 
-            h3{
+            h3 {
                 font-size: 2rem;
                 color: $black;
             }
-            .stars{
+
+            .stars {
                 padding: 1rem 0;
-                a{
+
+                a {
                     font-size: 1.4rem;
                     color: $pink;
                 }
             }
 
-            .price{
+            .price {
                 font-size: 2.2rem;
                 color: $black;
 
-                span{
+                span {
                     font-size: 1.5rem;
                     text-decoration: line-through;
                     color: $light-color;
@@ -413,31 +416,32 @@ html {
     }
 }
 
-.about{
-    .row{
+.about {
+    .row {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         gap: 2rem;
 
-        .image{
-           flex: 1 1 42rem;
-           img{
-            width: 100%;
-            border-radius: 0.5rem;
-           }
-        }
-
-        .content{
+        .image {
             flex: 1 1 42rem;
 
-            h3{
+            img {
+                width: 100%;
+                border-radius: 0.5rem;
+            }
+        }
+
+        .content {
+            flex: 1 1 42rem;
+
+            h3 {
                 font-size: 3.5rem;
                 color: $black;
                 line-height: 2;
             }
 
-            p{
+            p {
                 font-size: 1.4rem;
                 line-height: 2.5;
                 color: $light-color;
@@ -446,32 +450,35 @@ html {
         }
     }
 
-    .icons-container{
+    .icons-container {
         @include grid(16rem);
         margin-top: 2.5rem;
 
-        .icons{
+        .icons {
             padding: 3rem 2rem;
             border-radius: 0.5rem;
             border: $border;
             text-align: center;
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 background: $black;
 
-                img{
+                img {
                     filter: invert(1);
                 }
-                p{
+
+                p {
                     color: $white;
                 }
             }
 
-            img{
+            img {
                 height: 7rem;
                 margin-bottom: 1rem;
             }
-            p{
+
+            p {
                 font-size: 1.7rem;
                 color: $black;
             }
@@ -479,7 +486,75 @@ html {
     }
 }
 
+.blogs .boxes {
+    @include grid(32rem);
 
+    .box {
+        border-radius: 0.5rem;
+        overflow: hidden;
+        border: $border;
+        cursor: pointer;
+
+        &:hover .image img{
+            transform: scale(1.1);
+        }
+
+        .image {
+            width: 100%;
+            height: 25rem;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content {
+            padding: 2rem;
+
+            h3 {
+                font-size: 2rem;
+                color: $black;
+                line-height: 2;
+            }
+
+            p {
+                font-size: 1.4rem;
+                line-height: 2.5;
+                color: $light-color;
+                padding: 1rem 0;
+            }
+
+            .icons {
+                border-top: $border;
+                padding-top: 1rem;
+                margin-top: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                a {
+                    font-size: 1.4rem;
+                    color: $light-color;
+
+                    &:hover{
+                        color: $pink;
+                    }
+
+                    i{
+                        padding-right: 0.5rem;
+                        color: $pink;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
 
 
 

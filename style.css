@@ -404,6 +404,64 @@ html {
   color: #333;
 }
 
+.blogs .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+.blogs .boxes .box {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 0.2rem solid #333;
+  cursor: pointer;
+}
+.blogs .boxes .box:hover .image img {
+  transform: scale(1.1);
+}
+.blogs .boxes .box .image {
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+}
+.blogs .boxes .box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogs .boxes .box .content {
+  padding: 2rem;
+}
+.blogs .boxes .box .content h3 {
+  font-size: 2rem;
+  color: #333;
+  line-height: 2;
+}
+.blogs .boxes .box .content p {
+  font-size: 1.4rem;
+  line-height: 2.5;
+  color: #666;
+  padding: 1rem 0;
+}
+.blogs .boxes .box .content .icons {
+  border-top: 0.2rem solid #333;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blogs .boxes .box .content .icons a {
+  font-size: 1.4rem;
+  color: #666;
+}
+.blogs .boxes .box .content .icons a:hover {
+  color: #e84393;
+}
+.blogs .boxes .box .content .icons a i {
+  padding-right: 0.5rem;
+  color: #e84393;
+}
+
 .footer .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
