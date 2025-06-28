@@ -541,7 +541,6 @@ html {
   gap: 0.5rem;
   padding: 1rem 0;
   margin-bottom: 1rem;
-  cursor: pointer;
 }
 .login-form form .flex label,
 .register-form form .flex label {
