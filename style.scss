@@ -676,7 +676,7 @@ html {
 
 .shopping-cart {
     .box-container {
-        @include grid(31rem);
+        @include grid(32rem);
         margin-bottom: 2rem;
 
         .box {
@@ -897,5 +897,8 @@ html {
 
     .home .slide .content h3 {
         font-size: 4rem;
+    }
+    .shopping-cart .box-container .box{
+        flex-flow: column;
     }
 }
