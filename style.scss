@@ -640,14 +640,15 @@ html {
             gap: 0.5rem;
             padding: 1rem 0;
             margin-bottom: 1rem;
+            cursor: pointer;
             label{
                 font-size: 1.5rem;
-                cursor: pointer;
                 color: $light-color;
             }
             a{
                 font-size: 1.5rem;
                 color: $light-color;
+                margin-left: auto;
                 margin-top: auto;
                 &:hover{
                     color: $pink;
@@ -664,7 +665,7 @@ html {
             }
         }
         .btn{
-            width: 100px;
+            width: 100%;
         }
     }
 }

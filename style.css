@@ -541,17 +541,18 @@ html {
   gap: 0.5rem;
   padding: 1rem 0;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 .login-form form .flex label,
 .register-form form .flex label {
   font-size: 1.5rem;
-  cursor: pointer;
   color: #666;
 }
 .login-form form .flex a,
 .register-form form .flex a {
   font-size: 1.5rem;
   color: #666;
+  margin-left: auto;
   margin-top: auto;
 }
 .login-form form .flex a:hover,
@@ -569,7 +570,7 @@ html {
 }
 .login-form form .btn,
 .register-form form .btn {
-  width: 100px;
+  width: 100%;
 }
 
 .footer .box-container {
