@@ -619,12 +619,13 @@ html {
             align-items: center;
             gap: 1rem;
 
-            span{
+            span {
                 color: $light-color;
                 margin-left: 1rem;
                 font-size: 2rem;
             }
-            input{
+
+            input {
                 width: 100%;
                 padding: 1rem;
                 background: none;
@@ -634,42 +635,106 @@ html {
             }
         }
 
-        .flex{
+        .flex {
             display: flex;
             align-items: center;
             gap: 0.5rem;
             padding: 1rem 0;
             margin-bottom: 1rem;
-         
-            label{
+
+            label {
                 font-size: 1.5rem;
                 color: $light-color;
             }
-            a{
+
+            a {
                 font-size: 1.5rem;
                 color: $light-color;
                 margin-left: auto;
                 margin-top: auto;
-                &:hover{
+
+                &:hover {
                     color: $pink;
                 }
             }
         }
 
-        input[type="submit"]{
+        input[type="submit"] {
             background: $black;
             color: $white;
 
-            &:hover{
+            &:hover {
                 background: $pink;
             }
         }
-        .btn{
+
+        .btn {
             width: 100%;
         }
     }
 }
 
+.shopping-cart {
+    .box-container {
+        @include grid(31rem);
+        margin-bottom: 2rem;
+
+        .box {
+            border-radius: 0.5rem;
+            border: $border;
+            padding: 3rem 2rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            .fa-times {
+                position: absolute;
+                top: 1rem;
+                right: 1.5rem;
+                font-size: 2.5rem;
+                cursor: pointer;
+                color: $light-color;
+
+                &:hover {
+                    color: $pink;
+                }
+            }
+
+            img {
+                height: 10rem;
+            }
+
+            .content {
+                h3 {
+                    font-size: 1.7rem;
+                    padding-bottom: 0.5rem;
+                    color: $black;
+                }
+
+                form {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    padding: 1rem 0;
+
+                    span {
+                        color: $light-color;
+                        font-size: 1.5rem;
+                    }
+
+                    input {
+                        width: 5rem;
+                        font-size: 1.5rem;
+                        color: $light-color;
+                        padding: 1rem;
+                        border-radius: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

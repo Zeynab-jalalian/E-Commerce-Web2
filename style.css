@@ -572,6 +572,58 @@ html {
   width: 100%;
 }
 
+.shopping-cart .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.shopping-cart .box-container .box {
+  border-radius: 0.5rem;
+  border: 0.2rem solid #333;
+  padding: 3rem 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.shopping-cart .box-container .box .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #666;
+}
+.shopping-cart .box-container .box .fa-times:hover {
+  color: #e84393;
+}
+.shopping-cart .box-container .box img {
+  height: 10rem;
+}
+.shopping-cart .box-container .box .content h3 {
+  font-size: 1.7rem;
+  padding-bottom: 0.5rem;
+  color: #333;
+}
+.shopping-cart .box-container .box .content form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.shopping-cart .box-container .box .content form span {
+  color: #666;
+  font-size: 1.5rem;
+}
+.shopping-cart .box-container .box .content form input {
+  width: 5rem;
+  font-size: 1.5rem;
+  color: #666;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
 .footer .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
