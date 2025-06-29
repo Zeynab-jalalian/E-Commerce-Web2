@@ -1,4 +1,4 @@
-**# E-Commerce Web 
+# E-Commerce Web 
 
 #### ![Languages](https://img.shields.io/github/languages/count/zeynab-jalalian/E-Commerce-Web2) :
  - ![Javascript](https://img.shields.io/badge/javascript-yellow)
